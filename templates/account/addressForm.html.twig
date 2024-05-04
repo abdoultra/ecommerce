@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container my-5 ">
+<h1> Espace Membre</h1>
+<div class="row">
+        <div class="col-md-3">
+        {% include 'account/_menu.html.twig' %}'
+        </div>
+        <div class="col-md-9">
+        <h5> Mes adresses</h5>
+         <a  href="{{ path('app_account_address_Form') }}">Ajouter une adresse</a>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
